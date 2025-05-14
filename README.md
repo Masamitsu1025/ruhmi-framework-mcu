@@ -1,5 +1,5 @@
 
-# To be revised!! Branch testing-mm, Test again
+# To edit ReadMe by MM as the preliminary
 
 # RUHMI 2.3.1 Release - MCU
 
