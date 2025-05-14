@@ -1,6 +1,5 @@
 
 # To edit ReadMe by MM as the preliminary
-# Subject to change
 
 # RUHMI 2.3.1 Release - MCU
 
