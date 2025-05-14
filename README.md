@@ -1,20 +1,26 @@
+# MERA 2.3.1 Release - MCU
 
-# To be revised!! Branch testing-mm, Test again
-
-# RUHMI 2.3.1 Release - MCU
-
-The present package provides the RUHMI software stack with support for MCUs and Ethos-U55 support.
+The present package provides the MERA software stack with support for MCUs and Ethos-U55 support.
 
 ## Software stack overview
 
- * `install` contains PIP package of RUHMI 2.3.1 MCU
- * `scripts` contains python scripts to showcase the RUHMI API for model quantization and deployment
+ * `sample_e2studio_ethos_projects` contains e2Studio projects for Renesas RA8P1 boards showcasing
+    inference of several ML models deployed using the MERA compiler with the Ethos support enabled.
+
+ * `install` contains PIP package of MERA 2.3.1 MCU
+ * `scripts` contains python scripts to showcase the MERA API for model quantization and deployment
     of TFLite, ONNX and Torch models on MCU and Ethos targets
+ * `models_fp32` directory with the models used on the MERA Quantizer + MCU demo
+ * `models_fp32_ethos` directory with the models used on the MERA Quantizer + Ethos-U55 demo
+ * `models_int8` directory with third-party quantized models used for the MERA MCU deployment demo
 
- * `models_fp32` directory with the models used on the RUHMI Quantizer + MCU demo
- * `models_fp32_ethos` directory with the models used on the RUHMI Quantizer + Ethos-U55 demo
- * `models_int8` directory with third-party quantized models used for the RUHMI MCU deployment demo
+## e2Studio Projects
 
+Under the directory `sample_e2studio_ethos_projects` you can find pre-generated projects for different
+models of interest as Wav2Letter, RNNoise, Yolo and others.
+
+These should be ready to use out of the box from an installation of e2studio that contains FSP 5.7.0
+and support for the EK-RA8P1 WSB boards with device R7KA8P1KFLCAC.
 
 The versions of e2studio and components used are:
 
@@ -42,9 +48,9 @@ The versions of e2studio and components used are:
 ### Vela version
 
 The version of ARM Vela compiler used to compile those subgraphs assigned to the Ethos-U55 target is 4.2.0.
-Note that when installing the RUHMI 2.3.1 PIP package it will automatically pull Vela 4.2 as a dependency.
+Note that when installing the MERA 2.3.1 PIP package it will automatically pull Vela 4.2 as a dependency.
 
-## RUHMI Installation
+## MERA Installation
 
 Under the directory `install` PIPs package is provded.
 In order to install MERA 2.3.1 MCU on supported environment you will need:
