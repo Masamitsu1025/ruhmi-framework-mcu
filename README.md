@@ -1,20 +1,22 @@
-# MERA 2.3.1 Release - MCU
 
-The present package provides the MERA software stack with support for MCUs and Ethos-U55 support.
+
+# RUHMI 2.3.1 Release - MCU
+
+The present package provides the RUHMI software stack with support for MCUs and Ethos-U55 support.
 =======
 
 
 ## Software stack overview
 
  * `sample_e2studio_ethos_projects` contains e2Studio projects for Renesas RA8P1 boards showcasing
-    inference of several ML models deployed using the MERA compiler with the Ethos support enabled.
+    inference of several ML models deployed using the RUHMI compiler with the Ethos support enabled.
 
- * `install` contains PIP package of MERA 2.3.1 MCU
- * `scripts` contains python scripts to showcase the MERA API for model quantization and deployment
+ * `install` contains PIP package of RUHMI 2.3.1 MCU
+ * `scripts` contains python scripts to showcase the RUHMI API for model quantization and deployment
     of TFLite, ONNX and Torch models on MCU and Ethos targets
- * `models_fp32` directory with the models used on the MERA Quantizer + MCU demo
- * `models_fp32_ethos` directory with the models used on the MERA Quantizer + Ethos-U55 demo
- * `models_int8` directory with third-party quantized models used for the MERA MCU deployment demo
+ * `models_fp32` directory with the models used on the RUHMI Quantizer + MCU demo
+ * `models_fp32_ethos` directory with the models used on the RUHMI Quantizer + Ethos-U55 demo
+ * `models_int8` directory with third-party quantized models used for the RUHMI MCU deployment demo
 
 ## e2Studio Projects
 
@@ -50,12 +52,12 @@ The versions of e2studio and components used are:
 ### Vela version
 
 The version of ARM Vela compiler used to compile those subgraphs assigned to the Ethos-U55 target is 4.2.0.
-Note that when installing the MERA 2.3.1 PIP package it will automatically pull Vela 4.2 as a dependency.
+Note that when installing the RUHMI 2.3.1 PIP package it will automatically pull Vela 4.2 as a dependency.
 
-## MERA Installation
+## RUHMI Installation
 
 Under the directory `install` PIPs package is provded.
-In order to install MERA 2.3.1 MCU on supported environment you will need:
+In order to install RUHMI 2.3.1 MCU on supported environment you will need:
 
  * A machine with Ubuntu 22.04 installation is recommended as this was the version used for testing
  * A working installation of PyEnv or other Python virtual environment management system that provides
@@ -89,9 +91,9 @@ curl https://pyenv.run | bash
 Note the post-installation steps shown at the end of the installation script
 necessary to make PyEnv available on the system.
 
-#### Python Virtual Environment for MERA
+#### Python Virtual Environment for RUHMI
 
-We need to create a virtual environment suitable for MERA:
+We need to create a virtual environment suitable for RUHMI:
 
 ```bash
 MENV=mera-env; pyenv install 3.10.15 && pyenv virtualenv 3.10.15 $MENV && pyenv activate $MENV && \
@@ -105,13 +107,13 @@ Your prompt should now show that you are under a virtual environment `mera-env`:
 (mera-env) user@compute-01:~$
 ```
 
-#### Install MERA
+#### Install RUHMI
 
-Finally install MERA on the virtual environment `mera-env`:
+Finally install RUHMI on the virtual environment `mera-env`:
 
 ```bash
 cd install/
-pip install ./mera-2.3.1+pkg.1503-cp310-cp310-manylinux_2_27_x86_64.whl
+pip install ./RUHMI-2.3.1+pkg.1503-cp310-cp310-manylinux_2_27_x86_64.whl
 ```
 
 
@@ -124,7 +126,7 @@ python -c "import mera;print(dir(mera))"
 ##### Windows requirements
 
 Note that we also provide the a version for Windows under the same directory `install`.
-The PIP package of MERA 2.3.1 MCU for windows was tested with:
+The PIP package of RUHMI 2.3.1 MCU for windows was tested with:
 
  * Windows 11
  * VisualStudio Professional 2022
@@ -132,9 +134,9 @@ The PIP package of MERA 2.3.1 MCU for windows was tested with:
 Only requirement is to install the C++ runtime libraries.
 Please download and install [this package](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
-### How to deploy models with MERA 2.3.1 MCU
+### How to deploy models with RUHMI 2.3.1 MCU
 
-The following shows how to use the MERA deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support:
+The following shows how to use the RUHMI deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support:
 
 ```python
 import os
@@ -270,12 +272,12 @@ Each of the directories contain a deployment of the corresponding model for MCU 
 Please reference to the provided pre-generated e2studio projects to see how the generated C code
 under `build/MCU/compilation/src` can be incorporated into a e2studio project.
 
-### Quantize and deploy models with MERA 2.3.1 MCUs
+### Quantize and deploy models with RUHMI 2.3.1 MCUs
 
-If the starting point it is a Float32 precision model it is possible to use the MERA Quantizer
+If the starting point it is a Float32 precision model it is possible to use the RUHMI Quantizer
 to first quantize the model and finally deploy with MCU/Ethos-U55 support.
 
-The following is a sample of how to quantize a model with the MERA Quantizer API:
+The following is a sample of how to quantize a model with the RUHMI Quantizer API:
 
 ```python
 with mera.Deployer(str(deploy_dir), overwrite=True) as deployer:
@@ -353,7 +355,7 @@ We provide a script that given a model (either with .tflite, .onnx or .pte exten
  * deploy the model for the MCU C Codegen target and generate C source code
  * compile the auto-generated Python bindings for the C source code
  * execute the C source code through the Python bindings
- * compare the MERA Interpreter results and the C source code results
+ * compare the RUHMI Interpreter results and the C source code results
 
 To run this script:
 
