@@ -58,6 +58,7 @@ The version of ARM Vela compiler used to compile those subgraphs assigned to the
 # License  
 
 # Installation
+[Installation Guide](/ruhmi-ai-compiler-mcu/blob/main/install/README.md)
 
 # 1.4 How to deploy models  
 The following code shows how to use the deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support:
