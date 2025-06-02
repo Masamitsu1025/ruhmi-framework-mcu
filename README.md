@@ -1,16 +1,16 @@
 
 
-# RUHMI 2.3.1 Release - MCU
+# RUHMI, Robust unified heterogeneous mode integration, is AI compiler to support Renesas MCU and MPU product, powered by EdgeCortix with MERA IP(MERA v2.3.x)
 
 # CONTENTS
 1 MERA user manual 1
-1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
-1.2 MERA Installation - Ubuntu Linux . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-1.3 MERA Installation - Windows 11 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1.4 How to deploy models with MERA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1.5 Quantize and deploy models with MERA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1.6 Full quantization demo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
-1.7 Guide to the generated C source code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.1 Introduction
+1.2 MERA Installation - Ubuntu Linux
+1.3 MERA Installation - Windows 11
+1.4 How to deploy models with MERA
+1.5 Quantize and deploy models with MERA
+1.6 Full quantization demo
+1.7 Guide to the generated C source code
 
 # 1.1 Introduction
 ## 1.1.1 Description
