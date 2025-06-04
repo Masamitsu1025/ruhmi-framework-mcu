@@ -1,6 +1,6 @@
 
 
-**Renesas RUHMI Framework (Robust Unified Heterogeneous Model Integration) supports AI model optimization and deployment with powered by The EdgeCortix© MERA™.**
+# Renesas RUHMI Framework (Robust Unified Heterogeneous Model Integration) supports AI model optimization and deployment with powered by EdgeCortix© MERA™.
 
 # CONTENTS
 * Introduction
