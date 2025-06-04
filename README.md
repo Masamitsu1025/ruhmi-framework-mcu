@@ -1,36 +1,27 @@
 
 
-**RUHMI, Robust unified heterogeneous model integration, is AI compiler to support Renesas MCU and MPU product, powered by The EdgeCortix© MERA™.**
+** RUHMI, Robust Unified Heterogeneous Model Integration, is Renesas RUHMI Framework to support Renesas MCU and MPU product, powered by The EdgeCortix© MERA™.**
 
-**CONTENTS**
+# CONTENTS
 * Introduction
-
 * License
-
 * Installation  
   Installation - Ubuntu Linux
   Installation - Windows 11
-
 * Deploy models  
   Deplyment demo  
-
 * Quantize and deploy models  
   Quantization demo  
-
 * Guide to the generated C source code  
   Runtime API - MPU only deployment  
   Runtime API - MPU + Ethos-U deployment  
-
 * ERROR list  
     
 
 # Introduction
 ## Description
-RUHMI provided by Renesas povides a compiler and the necessary tools to convert machine learning models into C source code compatible with range of Renesas MCUs powered by Arm Ethos-U NPUs.
+RUHMI promoted by Renesas povides a platform to optimize and deploy AI model with range of Renesas MCUs powered by Arm Ethos-U NPUs.
 This tool also generates C source code while ensuring compatibility and tight integration the with Renesas e2 studio.
-
-It also ships with Quantizer, a post-training static INT8 quantizer, allowing more demanding models to meet the memory and latency constraints typical of microcontrollers and Ethos-U accelerators.
-
 These functinalities have been supported by the MERA™ IPs from EdgeCortix©.
 
 ## Overall workflow
@@ -47,8 +38,7 @@ Currently, RUHMI provides support for Renesas embedded platforms:
 ## Software components overview
 *RUHMI compiler  
 Provided as a Python PIP package for Ubuntu 22.04 LTS that can be installed on a Python 3.10 virtual environment.
-
-TODO: explain components (compiler, quantizer, targets, platforms. . . etc)
+<u>TBD) TODO: explain components (compiler, quantizer, targets, platforms. . . etc)</u>
 
 *ARM Vela compiler
 When targeting a Renesas device powered by Arm Ethos-U NPU the MERA software stack will automatically leverage the Arm Vela compiler. Those parts of the machine learning model that can accelerated with the NPU will be processed
