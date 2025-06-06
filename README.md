@@ -1,28 +1,33 @@
 
 
-# Renesas RUHMI Framework (Robust Unified Heterogeneous Model Integration) supports AI model optimization and deployment with powered by EdgeCortix© MERA™.
+# RUHMI, Robust Unified Heterogeneous Model Integration, AI Framework supports AI model optimization and deployment with powered by EdgeCortix© MERA™.
 
 # CONTENTS
-* Introduction
-* License
-* Installation  
-  Installation - Ubuntu Linux
-  Installation - Windows 11
-* Deploy models  
+**Introduction**
+
+**Installation**
+      Installation - Ubuntu Linux
+      Installation - Windows 11
+
+**How to deploy models**
   Deplyment demo  
-* Quantize and deploy models  
+
+**Quantize and deploy models**
   Quantization demo  
-* Guide to the generated C source code  
+
+**Guide to the generated C source code**
   Runtime API - MPU only deployment  
   Runtime API - MPU + Ethos-U deployment  
-* ERROR list  
-    
 
-# Introduction
-## Description
-Renesas RUHMI Framework povides functinalities to optimize and deploy AI model with range of Renesas MCUs powered by Arm Ethos-U NPUs.
-This tool also generates C source code while ensuring compatibility and tight integration the with Renesas e2 studio.
-These functinalities have been supported by the MERA™ IPs from EdgeCortix©.
+**ERROR list** 
+
+**Licenses Overview**
+
+**AI model compile API Specification**
+
+
+## Introduction
+RUHMI AI Framework povides functinalities to optimize and deploy AI model with range of Renesas MCUs powered by Arm Ethos-U NPUs. This tool also generates C source code while ensuring compatibility and tight integration the with Renesas e2 studio. These functinalities have been supported by the MERA™ IPs from EdgeCortix©.
 
 ## Overall workflow
 • Import acceptable AI models from the most used ML frameworks as <u>PyTorch, TensorFlow Lite and ONNX</u>.
@@ -40,44 +45,24 @@ Provided as a Python PIP package for Ubuntu 22.04 LTS that can be installed on a
 <u>TBD) TODO: explain components (compiler, quantizer, targets, platforms. . . etc)</u>
 
 *ARM Vela compiler
-When targeting a Renesas device powered by Arm Ethos-U NPU the MERA software stack will automatically leverage the Arm Vela compiler. Those parts of the machine learning model that can accelerated with the NPU will be processed
-with the Arm Vela compiler in order to obtain valid assembly for the Ethos-U NPU.
-The version of ARM Vela compiler used to compile those subgraphs assigned to the Ethos-U55 target is 4.2.0. Note that when installing the MERA software stack PIP package it will automatically pull Arm Vela as a dependency.
+When targeting a Renesas device powered by Arm Ethos-U NPU the MERA software stack will automatically leverage the Arm Vela compiler. Those parts of the machine learning model that can accelerated with the NPU will be processed with the Arm Vela compiler in order to obtain valid assembly for the Ethos-U NPU. The version of ARM Vela compiler used to compile those subgraphs assigned to the Ethos-U55 target is 4.2.0. Note that when installing the MERA software stack PIP package it will automatically pull Arm Vela as a dependency.
 
-# License  
-[License](LICENSE)
-
-# Installation
+## Installation
 [Installation Guide](/install/README.md)
 
-# Deploy models  
+## How to deploy models
   [The intoroduction for the sample scripts](scripts/README.md)
 
-# Quantize and deploy models 
+## Quantize and deploy models 
   [The intoroduction for the sample scripts](scripts/README.md)
 
-# Guide to the generated C source code
-After processing a model with the RUHMI compiler, you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes.
-The most important output that RUHMI generates is found under the directory <u><deployment_directory>build/MCU/compilation/src</u>. This directory contains the model converted into a set of C99 source code files.
+## Guide to the generated C source code
+After processing a model with the RUHMI compiler, you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes. The most important output that RUHMI generates is found under the directory <u><deployment_directory>build/MCU/compilation/src</u>. This directory contains the model converted into a set of C99 source code files.
 
 ## Runtime API - MPU only deployment
 When a model is converted into source code with RUHMI compiler without Ethos-U support, all the operators in the model being deployed will be prepared to be run on CPU/MCU only. 
 In this case, the generated code will refer to a single subgraph compute_sub_0000<suffix>, by default, when no suffix is provided, the name of the header that need to included on your application entry point is compute_sub_0000.h.
 This header provides the declaration of a C function that if called it will run the model with the provided inputs and write the results on the provided output buffers:
-
-```
-enum BufferSize_sub_0000 {
-kBufferSize_sub_0000 = <intermediate_buffers_size>
-};
-void compute_sub_0000(
-// buffer for intermediate results
-uint8_t* main_storage, // should provide at least <intermediate_buffers_size> bytes of storage
-// inputs
-const int8_t <input_name>[xxx], // 1,224,224,3
-// outputs
-int8_t <output_name>[xxx] // 1,1000
-);
-```
 
 It provides to the user the possibility of providing a buffer to hold intermediate outputs of the model. And this size if provided in compilation time as the value <u>kBufferSize_sub_0000</u> so the user can use this size to allocate the buffer on the stack, the heap or a custom data section.
 
@@ -89,18 +74,20 @@ units named void RunModel(bool clean_outputs) and helpers to access to each of t
 under the same directory <deployment_directory>/build/MCU/compilation/src.
 For example, after enabling Ethos-U support for a model with two inputs and three outputs MERA provides the next runtime API:
 
-```
-// invoke the whole model
-void RunModel(bool clean_outputs);
-// Model input pointers
-float* GetModelInputPtr_input0();
-float* GetModelInputPtr_input1();
-// Model output pointers
-float* GetModelOutputPtr_out0();
-float* GetModelOutputPtr_out1();
-float* GetModelOutputPtr_out2();
-```
+## Guide to the generated C source code
+  Runtime API - MPU only deployment  
+  Runtime API - MPU + Ethos-U deployment  
 
-The function GetModelInputPtr_input0 provides access to the buffer where the user can write the first input of the 
-model and GetModelInputPtr_input1 gives us the pointer where the user can copy the second input.
-To run the model and all the CPU or NPU units needed to be invoked to do inference with the deployed model, the user should invoke to the RunModel() function. The parameter clean_outputs should be used only for debugging purposes because it will set to zero all the output buffers used by an NPU unit before invoking it. Recommended value for the parameter clean_outputs is false, as it will not incur into extra time expend on clearing these buffers.
+## ERROR list  
+
+
+## Licenses Overview  
+
+
+## AI model compile API Specification  
+
+
+
+
+
+
