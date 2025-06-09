@@ -5,25 +5,25 @@
 # CONTENTS
 **Introduction**
 
-**Installation**
-      Installation - Ubuntu Linux
-      Installation - Windows 11
+**Installation**  
+      Installation - Ubuntu Linux  
+      Installation - Windows 11  
 
-**How to deploy models**
+**How to deploy models**  
   Deplyment demo  
 
-**Quantize and deploy models**
+**Quantize and deploy models**  
   Quantization demo  
 
-**Guide to the generated C source code**
+**Guide to the generated C source code**  
   Runtime API - MPU only deployment  
   Runtime API - MPU + Ethos-U deployment  
 
 **ERROR list** 
 
-**Licenses Overview**
+**Licenses Overview**  
 
-**AI model compile API Specification**
+**AI model compile API Specification**  
 
 
 ## Introduction
