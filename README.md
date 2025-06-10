@@ -1,6 +1,6 @@
 
 
-# RUHMI, Robust Unified Heterogeneous Model Integration, AI Framework supports AI model optimization and deployment with powered by EdgeCortix© MERA™.
+# RUHMI, Robust Unified Heterogeneous Model Integration, Framework supports AI model optimization and deployment with powered by EdgeCortix© MERA™.
 
 # CONTENTS
 **Introduction**
