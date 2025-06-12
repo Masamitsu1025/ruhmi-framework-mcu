@@ -40,11 +40,11 @@ In order to install RUHMI Framework on supported environment you will need:
 ## How to deploy models
 The sample script shows how to use the deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support.  
 
-### deploy to CPU only  
+### Deploy to CPU only  
 By running the provided script scripts/mcu_deploy.py we can compile the model for MCU only:  
   ``
-  cd scripts/
-  python mcu_deploy.py --ref_data ../models_int8 deploy_qtzed
+  cd scripts/  
+  python mcu_deploy.py --ref_data ../models_int8 deploy_qtzed  
   ``
 
 This release provides some tested models, if the models provided are for example:  
@@ -61,8 +61,8 @@ This release provides some tested models, if the models provided are for example
 ### deploy to CPU with Ethos U55 supported:    
 When enabling Ethos-U support:  
   ``
-  cd scripts/
-  python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos
+  cd scripts/  
+  python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos  
   ``
 
 you will get the following results:
@@ -81,41 +81,42 @@ When Ethos-U support is enabled, each of the directories contain a deployment of
 
 ``
 |-- person-det_no_ospi  
-&emsp;|-- build  
-&emsp;|-- MCU  
-            | -- compilation  
-                   | -- mera.plan  
-                   | -- src     # compilation results: C source code and C++ testing support code # HAL entry example  
-                         | -- CMakeLists.txt  
-                         | -- compare.cpp  
-                         | -- compute_sub_0000.c # CPU subgraph generated C source code  
-                         | -- compute_sub_0000.h  
-                         | -- ...  
-                         | -- ethosu_common.h  
-                         | -- hal_entry.c  
-                         | -- kernel_library_int.c # kernel library if CPU subgraphs are present  
-                         | --  ...  
-                         | -- model.c  
-                         | -- model.h  
-                         | -- model_io_data.c  
-                         | -- model_io_data.h  
-                         | -- python_bindings.cpp  
-                         | -- sub_0001_command_stream.c # Ethos-U55 subgraph generated C source code  
-                         | -- sub_0001_command_stream.h  
-                         | -- sub_0001_invoke.c  
-                         | -- sub_0001_invoke.h  
-                         | --  ...  
-                    | --  ...  
-              | -- deploy_cfg.json  
-              | --ir_dumps  
-                  | -- person-det_can.dot  
-                  | -- ...  
-            |-- person-det_after_canonicalization.dot  
-            |-- person-det_subgraphs.dot  
-    |-- logs  
-    |--model  
-         |-- input_desc.json  
-    |-- project.mdp  
+	|-- build  
+		|-- MCU  
+			| -- compilation  
+				| -- mera.plan  
+				| -- src     # compilation results: C source code and C++ testing support code # HAL entry example  
+					| -- CMakeLists.txt  
+					| -- compare.cpp  
+					| -- compute_sub_0000.c # CPU subgraph generated C source code  
+					| -- compute_sub_0000.h  
+					| -- ...  
+					| -- ethosu_common.h  
+					| -- hal_entry.c  
+					| -- kernel_library_int.c # kernel library if CPU subgraphs are present  
+					| --  ...  
+					| -- model.c  
+					| -- model.h  
+					| -- model_io_data.c  
+					| -- model_io_data.h  
+					| -- python_bindings.cpp  
+					| -- sub_0001_command_stream.c # Ethos-U55 subgraph generated C source code  
+					| -- sub_0001_command_stream.h  
+					| -- sub_0001_invoke.c  
+					| -- sub_0001_invoke.h  
+					| --  ...  
+				| --  ...  
+			| -- deploy_cfg.json  
+			| -- ir_dumps  
+				| -- person-det_can.dot  
+				| -- ...  
+			| -- person-det_after_canonicalization.dot  
+			| -- person-det_subgraphs.dot  
+	|-- logs  
+	|--　model  
+		|-- input_desc.json  
+	|-- project.mdp  
+  
 ``
 
 The generated C code under **build/MCU/compilation/src** can be incorporated into a e2studio project.
