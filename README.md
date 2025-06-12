@@ -79,8 +79,8 @@ you will get the following results:
 
 When Ethos-U support is enabled, each of the directories contain a deployment of the corresponding model for MCU + Ethos-U55 platform:  
 ``
-   person-det_no_ospi
-    |-- build  
+   person-det_no_ospi  
+&emsp; |-- build  
        |-- MCU  
             | -- compilation  
                    | -- mera.plan  
