@@ -28,19 +28,17 @@ In order to install RUHMI Framework on supported environment you will need:
 
 ## Installation - Windows
 The software stack is also provided as PIP package compatible with Windows 11.
-In order to install RUHMI Framework on supported environment you will need:
-• A machine with Windows 10 or 11. Windows 11 is recommended as this was the version used for testing  
-• A working installation of PyEnv or other Python virtual environment management system that provides Python version 3.10.x.
-• Microsoft C++ runtime libraries  
-– Please download and install the package below in order to provide these libraries.
-  [Microsoft C++ runtime libraries](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+In order to install RUHMI Framework on supported environment you will need:  
+• A machine with Windows 10 or 11. Windows 11 is recommended as this was the version used for testing   
+• A working installation of PyEnv or other Python virtual environment management system that provides Python version 3.10.x.  
+• Microsoft C++ runtime libraries   
 
   [Installation Guide](/install/README.md)
 
-## How to deploy models
+## How to deploy models  
 The sample script shows how to use the deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support.  
 
-### Deploy to CPU only  
+### Deploy to CPU only   
 By running the provided script scripts/mcu_deploy.py we can compile the model for MCU only:  
   ``
   cd scripts/  
@@ -48,41 +46,41 @@ By running the provided script scripts/mcu_deploy.py we can compile the model fo
   ``
 
 This release provides some tested models, if the models provided are for example:  
-  models_int8/
-  |- ad_medium_int8.tflite
-  |- kws_micronet_m.tflite
-  |- mobilenet_v2_1.0_224_INT8.tflite
-  |- person-det.tflite
-  |- rnnoise_INT8.tflite
-  |- vww4_128_128_INT8.tflite
-  |- wav2letter_int8.tflite
-  |- yolo-fastest_192_face_v4.tflite
+```
+  models_int8/  
+  ├── ad_medium_int8.tflite
+  ├── kws_micronet_m.tflite
+  ├── mobilenet_v2_1.0_224_INT8.tflite
+  ├── person-det.tflite
+  ├── rnnoise_INT8.tflite
+  ├── vww4_128_128_INT8.tflite
+  ├── wav2letter_int8.tflite
+  ├── yolo-fastest_192_face_v4.tflite
+```
 
 ### deploy to CPU with Ethos U55 supported:    
 When enabling Ethos-U support:  
-  ``
-  cd scripts/  
-  python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos  
-  ``
+```
+cd scripts/  
+python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos  
+ ```
 
 you will get the following results:
-
+```
     deploy_qtzed
-    |-- ad_medium_int8_no_ospi
-    |-- kws_micronet_m_no_ospi
-    |-- mobilenet_v2_1.0_224_INT8_ospi
-    |-- person-det_no_ospi
-    |-- rnnoise_INT8_no_ospi
-    |-- vww4_128_128_INT8_no_ospi
-    |-- wav2letter_int8_ospi
-    |-- yolo-fastest_192_face_v4_no_ospi
+    ├── ad_medium_int8_no_ospi
+    ├── kws_micronet_m_no_ospi
+    ├── mobilenet_v2_1.0_224_INT8_ospi
+    ├── person-det_no_ospi
+    ├── rnnoise_INT8_no_ospi
+    ├── vww4_128_128_INT8_no_ospi
+    ├── wav2letter_int8_ospi
+    ├── yolo-fastest_192_face_v4_no_ospi
+```
 
 When Ethos-U support is enabled, each of the directories contain a deployment of the corresponding model for MCU + Ethos-U55 platform:  
-
-## 4.ディレクトリ構成
-
 ```
-└── person-det_no_ospi  
+└── [ad_medium_int8_no_ospi]  # an example for "ad_medium_int8_no_ospi"  
     ├── build  
         ├── MCU  
             ├── compilation  
@@ -121,7 +119,6 @@ When Ethos-U support is enabled, each of the directories contain a deployment of
 ```
   
 The generated C code under **build/MCU/compilation/src** can be incorporated into a e2studio project.
-
   [The detailed description of deploy API](scripts/README.md)
 
 ## Quantize and deploy models 
@@ -133,6 +130,7 @@ To run the script:
   cd scripts/
   # deploy for MCU only
   python mcu_quantize.py ../models_fp32 deploy_mcu
+
   # deploy for MCU+Ethos-U55
   python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos
   ``
