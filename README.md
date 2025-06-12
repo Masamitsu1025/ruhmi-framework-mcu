@@ -79,6 +79,25 @@ you will get the following results:
 
 When Ethos-U support is enabled, each of the directories contain a deployment of the corresponding model for MCU + Ethos-U55 platform:  
 
+## 4.ディレクトリ構成
+
+```
+.
+└── laravel
+    ├── README.md
+    ├── composer.json
+    ├── composer.lock
+    ├── docker-compose.yml
+    ├── package-lock.json
+    ├── package.json
+    ├── phpunit.xml
+    ├── public
+    │   ├── favicon.ico
+    │   ├── index.php
+    │   └── robots.txt
+    └── vite.config.js
+```
+
 - {.tree} person-det_no_ospi  
 	- build  
 		- MCU  
