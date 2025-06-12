@@ -84,7 +84,9 @@ Install Python3.10 from the link.
 [Python3.10](https://www.python.org/downloads/release/python-3105/)  
 
 Create and move to the working folder. Assuming C:\work is the current folder in the following process.   
-Current folder: C:\work
+```
+PS CD C:\work
+```
 
 Biuild the vertual environment for Python  
 ``
@@ -96,13 +98,12 @@ Activate the vurtual environment as following
 PS C:\work> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process  
 PS C:\work> .venv\Scripts\Activate.ps1  
 ```
-
-Copy the installaation file here.  
+Copy the installation file under the install into the current folder.  
+The file name may vary depending on the release version.
 ```
 C:\work\install\mera-2.3.2-cp310-cp310-win_amd64.whl  
 ```
 
-where the versions may vary depending on the MERA release used.  
 At this point MERA should be ready to use. You can confirm with the following example:  
 
 ```
