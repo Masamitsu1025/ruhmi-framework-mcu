@@ -78,10 +78,11 @@ you will get the following results:
     |-- yolo-fastest_192_face_v4_no_ospi
 
 When Ethos-U support is enabled, each of the directories contain a deployment of the corresponding model for MCU + Ethos-U55 platform:  
+
 ``
-   person-det_no_ospi  
-&emsp; |-- build  
-       |-- MCU  
+|-- person-det_no_ospi  
+&emsp;|-- build  
+&emsp;|-- MCU  
             | -- compilation  
                    | -- mera.plan  
                    | -- src     # compilation results: C source code and C++ testing support code # HAL entry example  
