@@ -1,4 +1,4 @@
-# CURRENT LIMITATIONS
+# MERA 2.3.2 based limitations  
 
 There are some known constraints and boundaries of the system.   
 While designed to address a wide range of use cases, certain technical, operational, or design limitations may apply. Understanding these limitations ensures optimal deployment and helps guide workarounds or future enhancements.
@@ -65,8 +65,8 @@ Table 1: Quantizer Operator Support
 
 ## 6.2 C-Codegen Limitations
 
-• tfl.concatenation (TFL::ConcatenationOp) Only supports up to 4 dimensional inputs.
-• CIMSIS-NN 7.0で動くけど、Transpose convは未サポート
+• tfl.concatenation (TFL::ConcatenationOp) Only supports up to 4 dimensional inputs.  
+• CIMSIS-NN 7.0で動くけど、Transpose convは未サポート  
 
-他には？？
+他には？？  
 
