@@ -3,8 +3,6 @@
 The following table summarizes common errors encountered during model quantization, conversion, and execution, along with their technical descriptions. Each entry clarifies the root cause and impact of the error to aid in debugging
 and resolution.
 
-Table 1: Error List
-
 |Error Name|Module|Error Descroption|
 |---|---|---|
 |CHECK qparam.IsPerTensor()|Module MERA Inter-preter|The operation expected per-tensor quantization (where a single scale and zero-point are applied to the entire tensor) but encountered an incompatible quantization scheme (such as per-channel quantization). Per-tensor quantization uses uniform scaling across all tensor values, while per-channel quantization applies separate parameters to each channel, typically seen in depthwise convolutional layers. This mismatch prevents the quantization process from proceeding as configured.|
@@ -46,4 +44,3 @@ Table 1: Error List
 |Depthwise transposed conv2d is not supported by tflite|TFLite Export|TFLite doesn’t support depthwise transposed convolutions, preventing conversion or execution of models using this operation.|
 |TFLite exporter: Operator code not supported yet|TFLite Export|The TFLite exporter encountered an unsupported operator type, indicating the operation lacks an implementation for conversion to TFLite’s flatbuffer format. This blocks model export until the operator is either implemented or replaced.|
 |Operator conversion to tflite not supported yet|TFLite Export|Conversion to TFLite format failed because this operator type isn’t currently supported in the exporter. The operation lacks a translation rule to TFLite’s operator set, preventing model export.|
-
