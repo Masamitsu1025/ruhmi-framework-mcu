@@ -66,3 +66,7 @@ Table 1: Quantizer Operator Support
 ## 6.2 C-Codegen Limitations
 
 • tfl.concatenation (TFL::ConcatenationOp) Only supports up to 4 dimensional inputs.
+• CIMSIS-NN 7.0で動くけど、Transpose convは未サポート
+
+他には？？
+

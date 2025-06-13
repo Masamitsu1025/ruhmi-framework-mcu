@@ -80,6 +80,9 @@ For example, after enabling Ethos-U support for a model with two inputs and thre
 ## ERROR list  
   [The ERROR list](doc/error_list.md)
 
+## LIMITATINSMS  
+  [LIMITATIONS NOTICE](/LIMITATIONS.md)
+
 ## AI model compile API Specification  
   [The AI model compile API](doc/api_specification.md)
 
