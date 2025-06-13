@@ -1,4 +1,4 @@
-*RUHMI consists of MERA IP provided by EdgeCortix. You will see the name of MERA sometimes in the process.*
+# RUHMI consists of MERA IP provided by EdgeCortix. You will see the name of MERA sometimes in the process.
 
 # Installation  
 
@@ -17,14 +17,14 @@ In order to install RUHMI on supported environment, you will need:
 * A working installation of PyEnv or other Python virtual environment management system that provides Python
 version 3.10.x.
 
-**Prepare the environment**
-System dependencies necessary to create environments and run demos:
+**Prepare the environment**  
+System dependencies necessary to create environments and run demos:  
 
 ```
 sudo apt update; sudo apt install build-essential cmake python3-venv python3-pip
 ```
 
-**Recommended: use the default Python installation**
+**Recommended: use the default Python installation**  
 Because MERA software stack is compatible by default with the base system Python version provided by Ubuntu 22.04
 we can create a virtual environment as follows:
 
@@ -37,7 +37,7 @@ pip install --upgrade pip && pip install decorator typing_extensions psutil attr
 Your prompt should now show that you are under a virtual environment mera-env:
 (mera-env) user@compute:~$
 
-**Alternative: PyEnv installation**
+**Alternative: PyEnv installation**  
 If PyEnv is preffered over the base system Python installation you can get started with:
 
 ```
@@ -69,7 +69,7 @@ pip install decorator typing_extensions psutil attrs pybind11
 Your prompt should now show that you are under a virtual environment mera-env:  
 (mera-env) user@compute:~$  
 
-**Install MERA**
+**Install MERA**  
 Finally install MERA on the virtual environment mera-env:  
 
 ```
@@ -97,7 +97,7 @@ Create and move to the working folder. Assuming C:\work is the current folder in
 PS CD C:\work
 ```
 
-**Prepare the virtual environment**
+**Prepare the virtual environment**  
 Biuild the vertual environment for Python  
 ``
 PS C:\work> py -3.10 -m venv .venv  
@@ -108,7 +108,7 @@ Activate the vurtual environment as following
 PS C:\work> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process  
 PS C:\work> .venv\Scripts\Activate.ps1  
 ```
-**Install MERA into Windows**
+**Install MERA into Windows**  
 Copy the installation file under the install into the current folder.  
 The file name may vary depending on the release version.
 ```
