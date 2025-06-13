@@ -89,14 +89,14 @@ If the starting point it is a Float32 precision model, it is possible to use the
 The sample script with using the Quantizer can be refred.
 
 To run the script:
-  ``
-  cd scripts/
-  # deploy for MCU only
-  python mcu_quantize.py ../models_fp32 deploy_mcu
+```
+cd scripts/
+# deploy for MCU only
+python mcu_quantize.py ../models_fp32 deploy_mcu
 
-  # deploy for MCU+Ethos-U55
-  python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos
-  ``
+# deploy for MCU+Ethos-U55
+python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos
+```
 
    [The detailed description of deploy API](scripts/README.md)
 
