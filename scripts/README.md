@@ -81,8 +81,8 @@ When Ethos-U support is enabled, each of the directories contain a deployment of
     ├── project.mdp  
 ```
   
-The generated C code under **build/MCU/compilation/src** can be incorporated into a e2studio project.
-  [The detailed description of deploy API](scripts/README.md)
+The generated C code under **"build/MCU/compilation/src"** can be incorporated into a e2studio project.  
+You can refer to [the runtime API specification](doc/runtime_api.md) to study how to use the output file from RUHMI Framework.  
 
 # How to quantize and deploy models 
 If the starting point it is a Float32 precision model, it is possible to use the Quantizer to first quantize the model and finally deploy with MCU/Ethos-U55 support.
@@ -98,5 +98,7 @@ python mcu_quantize.py ../models_fp32 deploy_mcu
 python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos
 ```
 
-   [The detailed description of deploy API](scripts/README.md)
+The generated C code under **"build/MCU/compilation/src"** can be incorporated into a e2studio project.  
+You can refer to [the runtime API specification](doc/runtime_api.md) to study how to use the output file from RUHMI Framework.  
+
 
