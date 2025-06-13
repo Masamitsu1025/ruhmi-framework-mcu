@@ -1,7 +1,7 @@
-## How to deploy models  
+# How to deploy models  
 The sample script shows how to use the deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support.  
 
-### Deploy to CPU only   
+## Deploy to CPU only   
 By running the provided script scripts/mcu_deploy.py we can compile the model for MCU only:  
   ``
   cd scripts/  
@@ -21,7 +21,7 @@ This release provides some tested models, if the models provided are for example
   ├── yolo-fastest_192_face_v4.tflite
 ```
 
-### deploy to CPU with Ethos U55 supported:    
+## Deploy to CPU with Ethos U55 supported    
 When enabling Ethos-U support:  
 ```
 cd scripts/  
@@ -84,7 +84,7 @@ When Ethos-U support is enabled, each of the directories contain a deployment of
 The generated C code under **build/MCU/compilation/src** can be incorporated into a e2studio project.
   [The detailed description of deploy API](scripts/README.md)
 
-## Quantize and deploy models 
+# How to quantize and deploy models 
 If the starting point it is a Float32 precision model, it is possible to use the Quantizer to first quantize the model and finally deploy with MCU/Ethos-U55 support.
 The sample script with using the Quantizer can be refred.
 
