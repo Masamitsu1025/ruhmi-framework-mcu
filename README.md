@@ -77,14 +77,17 @@ For example, after enabling Ethos-U support for a model with two inputs and thre
 
 # ここまで
 
-## ERROR list  
-  [The ERROR list](doc/error_list.md)
+## AI model compiler API Specification  
+You might want to see the cutermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
+  [AI model compiler API](doc/api_specification.md)
 
-## LIMITATINSMS  
-  [LIMITATIONS NOTICE](/LIMITATIONS.md)
+## Support  
+### Error List  
+If error occurred at compile/runtime operation, please refer [error list](./doc/error_list.md).  
 
-## AI model compile API Specification  
-  [The AI model compile API](doc/api_specification.md)
+### Enquiries  
+If you have any questions, please contact [Renesas Technical Support](https://www.renesas.com/support).  
+
 
 
 
