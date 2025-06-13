@@ -72,13 +72,16 @@ units named void RunModel(bool clean_outputs) and helpers to access to each of t
 under the same directory <deployment_directory>/build/MCU/compilation/src.
 For example, after enabling Ethos-U support for a model with two inputs and three outputs MERA provides the next runtime API:
 
+  [The runtime_API](doc/runtime_api.md)
+
+
 # ここまで
 
 ## ERROR list  
-  [The ERROR list](doc/error.md)
+  [The ERROR list](doc/error_list.md)
 
 ## AI model compile API Specification  
-  [The AI model compile API](doc/compile_api.md)
+  [The AI model compile API](doc/api_specification.md)
 
 
 
