@@ -7,7 +7,8 @@ The version number included in the file name like 2.3.2 depens on MERA IP.
 \install\mera-2.3.2+pkg.1595-cp310-cp310-manylinux_2_27_x86_64.whl  
 \install\mera-2.3.2-cp310-cp310-win_amd64.whl  
 ```
-**RUHMI Framework consists of MERA IP provided by EdgeCortix(TM). You will see the name of MERA sometimes in the process.**  
+{.info}
+: RUHMI Framework consists of MERA IP provided by EdgeCortix(TM). You will see the name of MERA sometimes in the process.  
 
 The relating files and documents have located in the GitHub here.  
 [RUHMI-FRAMEWORK-MCU](https://github.com/renesas/ruhmi-framework-mcu)
