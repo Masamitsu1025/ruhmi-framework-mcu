@@ -114,8 +114,12 @@ PS C:\work> .venv\Scripts\Activate.ps1
 **Install MERA into Windows**  
 Copy the installation file under the install into the current folder.  
 The file name may vary depending on the release version.
+
+Install RUHMI AI Compiler into the virtual environment.
+Also, install required dependencies.
 ```
-C:\work\install\mera-2.3.2-cp310-cp310-win_amd64.whl  
+(.venv) PS C:\work\install> python -m pip install .\mera-2.3.2-cp310-cp310-win_amd64.whl   
+(.venv) PS C:\work\install> python -m pip install onnx==1.17.0 tflite==2.18.0
 ```
 
 At this point, MERA should be ready to use. You can confirm with the following example:  
