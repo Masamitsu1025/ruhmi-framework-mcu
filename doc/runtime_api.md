@@ -1,9 +1,39 @@
 Guide to the generated C source code
 ************************************
 
-After processing a model with the MERA compiler you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes.
+After processing a model with the compiler, you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes.
 
-The most important output that MERA generates is found under the directory **<deployment_directory>build/MCU/compilation/src**. This directory contains the model converted into a set of C99 source code files.
+The most important output that RHUMI framework generates is found under the directory **<deployment_directory>build/MCU/compilation/src**. This directory contains the model converted into a set of C99 source code files.
+
+### an example of the folder structure
+```
+ models_int8/  
+  â”œâ”€â”€ ad_medium_int8.tflite
+       â”œâ”€â”€ build  
+            â”œâ”€â”€ MCU  
+                â”œâ”€â”€ compilation  
+                   â”œâ”€â”€ mera.plan  
+                   â”œâ”€â”€ src     # compilation results: C source code and C++ testing support code # HAL entry example  
+                      â”œâ”€â”€ CMakeLists.txt  
+                      â”œâ”€â”€ compare.cpp  
+                      â”œâ”€â”€ compute_sub_0000.c # CPU subgraph generated C source code  
+                      â”œâ”€â”€ compute_sub_0000.h  
+                      â”œâ”€â”€ ...  
+                      â”œâ”€â”€ ethosu_common.h  
+                      â”œâ”€â”€ hal_entry.c  
+                      â”œâ”€â”€ kernel_library_int.c # kernel library if CPU subgraphs are present  
+                      â”œâ”€â”€  ...  
+                      â”œâ”€â”€ model.c  
+                      â”œâ”€â”€ model.h  
+                      â”œâ”€â”€ model_io_data.c  
+                      â”œâ”€â”€ model_io_data.h  
+                      â”œâ”€â”€ python_bindings.cpp  
+                      â”œâ”€â”€ sub_0001_command_stream.c # Ethos-U55 subgraph generated C source code  
+                      â”œâ”€â”€ sub_0001_command_stream.h  
+                      â”œâ”€â”€ sub_0001_invoke.c  
+                      â”œâ”€â”€ sub_0001_invoke.h  
+                      â”œâ”€â”€  ...  
+```
 
 Runtime API - MPU only deployment
 =================================
@@ -79,16 +109,16 @@ In order to test the generated C99 code without deploying it to the board there 
 With this option enabled we will see some extra C++ files generated:
 
 .. code-block::
-   „¥„Ÿ„Ÿ deployment_directory
-   „    „¥„Ÿ„Ÿ build
-   „    „    „¤„Ÿ„Ÿ MCU
-   „    „        „¥„Ÿ„Ÿ compilation
-   „    „        „    „¥„Ÿ„Ÿ src
-   „    „        „    „    „¥„Ÿ„Ÿ CMakeLists.txt
-   „    „        „    „    „¥„Ÿ„Ÿ cmsis-windows.patch
-   „    „        „    „    „¥„Ÿ„Ÿ compare.cpp
-   „    „        „    „    „¥„Ÿ„Ÿ hal_entry.c
-   „    „        „    „    „¥„Ÿ„Ÿ python_bindings.cpp
+   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ deployment_directory
+   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ build
+   ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ MCU
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ compilation
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ src
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ CMakeLists.txt
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ cmsis-windows.patch
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ compare.cpp
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ hal_entry.c
+   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ python_bindings.cpp
 
 * **CMakeLists.txt** CMake project that compiles CMSIS-NN, the generated C99 code and Python bindings into a shared library (Python module).
 * **cmsis-windows.patch** The CMake project will pull dependencies as CMSIS-NN. In order to be able to compile CMSIS-NN on Windows this patch is necessary.
