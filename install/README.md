@@ -2,7 +2,8 @@
 # Installation  
 
 In order to install the software tool, the installation file below shall be used.
-The version number included in the file name like 2.3.2 depens on MERA IP.
+RUHMI framework includes MERA IPs supported by EdgeCortix, so you will see the files and some discriptions with the name of MERA included.
+Also, the version number included in the file name like 2.3.2 depens on MERA IP.
 ```
 \install\mera-2.3.2+pkg.1595-cp310-cp310-manylinux_2_27_x86_64.whl  
 \install\mera-2.3.2-cp310-cp310-win_amd64.whl  
@@ -105,6 +106,7 @@ PS C:\work> py -3.10 -m venv .venv
 ``
 
 Activate the vurtual environment as following   
+Before activating the vertual environment, you may need to change the security policy for shell execution.  
 ```
 PS C:\work> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process  
 PS C:\work> .venv\Scripts\Activate.ps1  
@@ -116,7 +118,7 @@ The file name may vary depending on the release version.
 C:\work\install\mera-2.3.2-cp310-cp310-win_amd64.whl  
 ```
 
-At this point MERA should be ready to use. You can confirm with the following example:  
+At this point, MERA should be ready to use. You can confirm with the following example:  
 
 ```
 python -c "import mera;print(dir(mera))"  
