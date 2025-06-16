@@ -10,7 +10,7 @@ RUHMI Framework povides a compiler and the necessary tools to convert machine le
 The software stack generates C source code while ensuring compatibility and tight integration the with Renesas e2 studio.
 It also ships with Quantizer, a post-training static INT8 quantizer, allowing more demanding models to meet the memory and latency constraints typical of microcontrollers and Ethos-U accelerators.
 
-## Overall workflow
+## RUHMI Framework workflow
 ![](doc/material/workflow_ruhmi.GIF)
 
 ## Supported embedded platforms  
