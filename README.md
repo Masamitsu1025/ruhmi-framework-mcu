@@ -76,7 +76,7 @@ For example, after enabling Ethos-U support for a model with two inputs and thre
 
 ## AI model compiler API Specification  
 You might want to see the cutermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
-  [AI model compiler API](doc/api_specification.md)
+  [AI model compiler API](doc/mera_api.html)
 
 ## Support  
 ### Error List  
