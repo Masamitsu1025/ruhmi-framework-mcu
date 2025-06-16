@@ -11,7 +11,7 @@ The software stack generates C source code while ensuring compatibility and tigh
 It also ships with Quantizer, a post-training static INT8 quantizer, allowing more demanding models to meet the memory and latency constraints typical of microcontrollers and Ethos-U accelerators.
 
 ## Overall workflow
-(doc/workflow_ruhmi.GIF)
+![](doc/workflow_ruhmi.GIF)
 
 ## Supported embedded platforms  
   • EK-RA8P1 board (device R7KA8P1KFLCAC)  
