@@ -82,6 +82,10 @@ You might want to see the cutermised method to quantize and to optimise your mod
 ### Error List  
 If error occurred at compile/runtime operation, please refer [error list](./doc/error_list.md).  
 
+### Limitation  
+There are some known constraints of the functions, Quatizer and C-Codegen.
+Please see [LIMITATIONS](LIMITATIONS.md).
+
 ### Enquiries  
 If you have any questions, please contact [Renesas Technical Support](https://www.renesas.com/support).  
 
