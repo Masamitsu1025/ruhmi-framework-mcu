@@ -14,7 +14,7 @@ It also ships with Quantizer, a post-training static INT8 quantizer, allowing mo
 ![](doc/material/workflow_ruhmi.GIF)
 
 ## Supported embedded platforms  
-  • EK-RA8P1 board (device R7KA8P1KFLCAC)  
+  • Renesas MCU RA8P1 series   
 
 ## Installation - Ubuntu Linux
 In order to install RUHMI Framework on supported environment you will need:  
@@ -35,44 +35,23 @@ In order to install RUHMI Framework on supported environment you will need:
 ## Sample scripts
 Same cases are introduced with the sample script.
 
-Exmple case:
+Example case:
 * Deploy models  
   Deploy to CPU only   
   Deploy to CPU with Ethos U55 supported    
-* Quantize and deploy models 
+* Quantize and deploy models  
   Deploy to CPU only   
   Deploy to CPU with Ethos U55 supported    
 
    [The detailed description of how to use the scripts](scripts/README.md)
 
 
-# このセクションの内容は要相談
-
 ## Guide to the generated C source code
 After processing a model, you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes.
 The most important output is found under the directory **<deployment_directory>build/MCU/compilation/src**. 
 This directory contains the model converted into a set of C99 source code files.
+You can refer to [how to use runtime API](doc/runtime_api.md)
 
-
-### Runtime API - MPU only deployment
-When a model is converted into source code with RUHMI compiler without Ethos-U support, all the operators in the model being deployed will be prepared to be run on CPU/MCU only. 
-In this case, the generated code will refer to a single subgraph compute_sub_0000<suffix>, by default, when no suffix is provided, the name of the header that need to included on your application entry point is compute_sub_0000.h.
-This header provides the declaration of a C function that if called it will run the model with the provided inputs and write the results on the provided output buffers:
-
-It provides to the user the possibility of providing a buffer to hold intermediate outputs of the model. And this size if provided in compilation time as the value <u>kBufferSize_sub_0000</u> so the user can use this size to allocate the buffer on the stack, the heap or a custom data section.
-
-### Runtime API - MPU + Ethos-U deployment
-
-If Ethos-U support is enabled during conversion into source code with MERA compiler then an arbitrary amount of subgraphs for either CPU or Ethos-U will be generated. Each of these subgraphs will correspond to generated C functions to run the corresponding section of the model on CPU or Ethos. Each function call will get its inputs from previous outputs of other subgraphs and write its outputs on buffers that are designated to became again inputs to other
-functions and so on. To make easier for the user to invoke these models where CPU and NPU are involved, the generated code will automate this process and provide a single function that will orchestrate the calls to the different computation
-units named void RunModel(bool clean_outputs) and helpers to access to each of the input and output areas at model level not per subgraph level. The runtime API header when Ethos-U is enabled can be found on a file named model.h
-under the same directory <deployment_directory>/build/MCU/compilation/src.
-For example, after enabling Ethos-U support for a model with two inputs and three outputs MERA provides the next runtime API:
-
-  [The runtime_API](doc/runtime_api.md)
-
-
-# ここまで
 
 ## AI model compiler API Specification  
 You might want to see the cutermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
@@ -88,6 +67,7 @@ Please see [LIMITATIONS](LIMITATIONS.md).
 
 ### Enquiries  
 If you have any questions, please contact [Renesas Technical Support](https://www.renesas.com/support).  
+You can also leverage the issues.
 
 
 

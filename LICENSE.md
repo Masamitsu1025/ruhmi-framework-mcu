@@ -2,8 +2,10 @@
 # External Licenses to be complied:
 
 The repository provides the RUHMI Framework software.  
-In the procedure to install it into your host machine, some software Components from the eternal place will be installed.
+In the procedure to install it into your host machine, some software components from the eternal place will be installed.
 You shall refer the license for each components listed below.
+
+For the generated source code by RUHMI framework to import into your project for e2Studio, you shall fere the copyright and the license with the source code.
 
 |Component|License|
 |---|---|
