@@ -91,10 +91,10 @@ The sample script with using the Quantizer can be refred.
 To run the script:
 ```
 cd scripts/
-# deploy for MCU only
+# deploy for CPU only
 python mcu_quantize.py ../models_fp32 deploy_mcu
 
-# deploy for MCU+Ethos-U55
+# deploy for CPU+Ethos-U55
 python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos
 ```
 
