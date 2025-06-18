@@ -10,8 +10,7 @@ Also, the version number included in the file name like 2.3.2 depens on MERA IP.
 ```
 **RUHMI Framework consists of MERA IP provided by EdgeCortix(TM). You will see the name of MERA sometimes in the process.**  
 
-**The resource for RUHMI Framework has located in the GitHub here.**  
-[RUHMI-FRAMEWORK-MCU](https://github.com/renesas/ruhmi-framework-mcu)
+**The resource for RUHMI Framework has located in the GitHub, [RUHMI-FRAMEWORK-MCU](https://github.com/renesas/ruhmi-framework-mcu)**  
 
 ## Installation - Ubuntu Linux  
 In order to install RUHMI on supported environment, you will need:
