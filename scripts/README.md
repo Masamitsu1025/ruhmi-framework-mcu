@@ -5,6 +5,7 @@ The sample script shows how to use the deployment API to compile an already quan
 By running the provided script scripts/mcu_deploy.py we can compile the model for MCU only:  
   ``
   cd scripts/  
+  # deploy for CPU only  
   python mcu_deploy.py --ref_data ../models_int8 deploy_qtzed  
   ``
 
@@ -25,6 +26,7 @@ This release provides some tested models, if the models provided are for example
 When enabling Ethos-U support:  
 ```
 cd scripts/   
+# deploy for CPU+Ethos-U55  
 python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos  
  ```
 
