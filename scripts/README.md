@@ -24,7 +24,7 @@ This release provides some tested models, if the models provided are for example
 ## Deploy to CPU with Ethos U55 supported    
 When enabling Ethos-U support:  
 ```
-cd scripts/  
+cd scripts/   
 python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos  
  ```
 
