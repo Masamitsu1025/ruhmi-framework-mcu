@@ -72,7 +72,7 @@ functions and so on. To make easier for the user to invoke these models where CP
 units named **void RunModel(bool clean_outputs)** and helpers to access to each of the input and output areas at model level not per subgraph level. The runtime API header when Ethos-U is enabled can be found on a file named model.h
 under the same directory **<deployment_directory>/build/MCU/compilation/src**.
 
-For example, after enabling Ethos-U support for a model with two inputs and three outputs MERA provides the next runtime API:  
+For example, after enabling Ethos-U support for a model with two inputs and three outputs, RUHMI framework provides the next runtime API:  
 
 ### Definition of input/output buffers (in the file of model.h)
 ```
