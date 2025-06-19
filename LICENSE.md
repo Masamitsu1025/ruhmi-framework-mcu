@@ -11,7 +11,7 @@ For the generated source code by RUHMI framework to import into your project for
 |---|---|
 |google/libnop|Apache, Version 2.0|
 |uxlfoundation/oneDNN|Apache, Version 2.0|
-|GNU OpenMP Linux only|GNU General Public License|
+|GNU OpenMP Linux only|GNU General Public License version 3 with GCC Runtime Library Exception, version 3.1|
 |Microsoft Visual C++ 2015 - 2022 Runtime Windows only |Microsoft Software License|
 |vimpunk/mio|MIT|
 |nlohmann/json|MIT|
@@ -20,5 +20,5 @@ For the generated source code by RUHMI framework to import into your project for
 |gabime/spdlog|MIT|
 |jarro2783/cxxopts|MIT|
 |pytorch/executorch|BSD|
-|GNU C++ Library|GPL3 + Exception to use in proprietary programs|
+|GNU C++ Library|GNU General Public License version 3 with GCC Runtime Library Exception, version 3.1|
 
