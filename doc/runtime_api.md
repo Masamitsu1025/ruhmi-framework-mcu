@@ -37,9 +37,9 @@ The most important output that RHUMI framework generates is found under the dire
 When a model is converted into source code with RUHMI compiler without Ethos-U support, all the operators in the model being deployed will be prepared to be run on CPU only.   
 In this case, the generated code will refer to a single subgraph **compute_sub_0000<suffix>**, by default, when no suffix is provided, the name of the header that need to included on your application entry point is **compute_sub_0000.h**.  
 
-This header provides the declaration of a C function that if called it will run the model with the provided inputs and write the results on the provided output buffers:  
+This header, **model.h** provides the declaration of a C function that if called it will run the model with the provided inputs and write the results on the provided output buffers:  
 
-### Definition
+### Definition of input/output buffers (in the file of model.h)
 ```
    enum BufferSize_sub_0000 {
      kBufferSize_sub_0000 = <intermediate_buffers_size>
@@ -67,14 +67,14 @@ It provides to the user the possibility of providing a buffer to hold intermedia
 ```
 
 ## Runtime API - CPU + Ethos-U deployment
-If Ethos-U support is enabled during conversion into source code with MERA compiler then an arbitrary amount of subgraphs for either CPU or Ethos-U will be generated. Each of these subgraphs will correspond to generated C functions to run the corresponding section of the model on CPU or Ethos. Each function call will get its inputs from previous outputs of other subgraphs and write its outputs on buffers that are designated to became again inputs to other
+If Ethos-U support is enabled during conversion into source code with the compiler then an arbitrary amount of subgraphs for either CPU or Ethos-U will be generated. Each of these subgraphs will correspond to generated C functions to run the corresponding section of the model on CPU or Ethos. Each function call will get its inputs from previous outputs of other subgraphs and write its outputs on buffers that are designated to became again inputs to other
 functions and so on. To make easier for the user to invoke these models where CPU and NPU are involved, the generated code will automate this process and provide a single function that will orchestrate the calls to the different computation
 units named **void RunModel(bool clean_outputs)** and helpers to access to each of the input and output areas at model level not per subgraph level. The runtime API header when Ethos-U is enabled can be found on a file named model.h
 under the same directory **<deployment_directory>/build/MCU/compilation/src**.
 
 For example, after enabling Ethos-U support for a model with two inputs and three outputs MERA provides the next runtime API:  
 
-### Definition    
+### Definition of input/output buffers (in the file of model.h)
 ```
 // invoke the whole model  
 void RunModel(bool clean_outputs);  

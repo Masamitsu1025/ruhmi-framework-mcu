@@ -67,7 +67,7 @@ Please see [LIMITATIONS](LIMITATIONS.md).
 
 ### Enquiries  
 If you have any questions, please contact [Renesas Technical Support](https://www.renesas.com/support).  
-You can also leverage the issues.
+You can also leverage [issues](https://github.com/Masamitsu1025/ruhmi-framework-mcu/issues).
 
 
 

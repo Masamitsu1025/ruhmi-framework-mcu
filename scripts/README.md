@@ -2,12 +2,12 @@
 The sample script shows how to use the deployment API to compile an already quantized TFLite model on a board with Ethos-U55 support.  
 
 ## Deploy to CPU only   
-By running the provided script scripts/mcu_deploy.py we can compile the model for MCU only:  
-  ``
+By running the provided script **scripts/mcu_deploy.py**. we can compile the model for MCU only:  
+```
   cd scripts/  
   # deploy for CPU only  
   python mcu_deploy.py --ref_data ../models_int8 deploy_qtzed  
-  ``
+```
 
 This release provides some tested models, if the models provided are for example:  
 ```
