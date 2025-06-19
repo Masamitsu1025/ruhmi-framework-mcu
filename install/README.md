@@ -105,7 +105,7 @@ PS C:\work> py -3.10 -m venv .venv
 ``
 
 Activate the vurtual environment as following   
-Before activating the vertual environment, you may need to change the security policy for shell execution.  
+Before activating the vertual environment, you may need to change the execution policy for shell execution.  
 ```
 PS C:\work> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process  
 PS C:\work> .venv\Scripts\Activate.ps1  
@@ -121,9 +121,5 @@ Also, install required dependencies.
 (.venv) PS C:\work\install> python -m pip install onnx==1.17.0 tflite==2.18.0
 ```
 
-At this point, MERA should be ready to use. You can confirm with the following example:  
 
-```
-python -c "import mera;print(dir(mera))"  
-```
 
