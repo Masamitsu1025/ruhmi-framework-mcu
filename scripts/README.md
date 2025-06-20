@@ -5,14 +5,14 @@ The directory configuration for the sample scripts to run is below.
 This release provides some tested models, if the models provided are for example:  
 ```
   ├── scripts
-        ├── mcu_deploy.py  // sample script for deploy
-        ├── mcu_quantize.py  // sample script for quantize and deploy
+  |     ├── mcu_deploy.py  // sample script for deploy
+  |     └── mcu_quantize.py  // sample script for quantize and deploy
   ├── models_int8  
-        ├── ad01_int8.tflite  // sample model to iput to deployer
+  |     └── ad01_int8.tflite  // sample model to iput to deployer from MLCommons
   ├── models_fp32  
-        ├── ad01_fp32.tflite  // sample model to input to Quantizer
+  |     └── ad01_fp32.tflite  // sample model to input to Quantizer from MLCommons
   ├── models_fp32_ethos  
-        ├── ad01_fp32.tflite  // sample model to input to Quantizer
+  |     └── ad01_fp32.tflite  // sample model to input to Quantizer from MLCommons
 ```
 
 ## Deploy to CPU only   
