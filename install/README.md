@@ -93,6 +93,7 @@ Please download and install
 Install Python3.10 from the link.  
 [Python3.10](https://www.python.org/downloads/release/python-3105/)  
 
+Open PowerShell from the windows start menu.
 Create and move to the working folder. Assuming C:\work is the current folder in the following process.   
 ```
 PS CD C:\work
@@ -122,5 +123,11 @@ Also, install required dependencies.
 (.venv) PS C:\work\install> python -m pip install onnx==1.17.0 tflite==2.18.0
 ```
 
-
-
+Please check that all your path settings of your environment are correct. After installation you should be able to
+successfully complete the following commands.
+```
+(.venv) PS C:\work\install> vela --version
+4.2.0
+(.venv) PS C:\work\install> python -c "import mera;print(dir(mera))"
+['Deployer', 'InputDescription', 'InputDescriptionContainer', 'Layout', 'MERADeployer', 'MeraModel', 'MeraTvmDeployment', 'MeraTvmModelRunner', 'MeraTvmPrjDeployment', 'ModelLoader', 'ModelQuantizer', 'Platform', 'PowerMetrics', 'QuantizationQualityMetrics', 'Quantizer', 'TVMDeployer', 'Target', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'calculate_quantization_quality', 'deploy', 'deploy_project', 'get_mera_dna_version', 'get_mera_tvm_version', 'get_mera_version', 'get_versions', 'load_mera_deployment', 'mera_deployment', 'mera_model', 'mera_platform', 'mera_quantizer', 'metrics', 'model', 'quantization_quality', 'quantizer', 'version']  
+```
