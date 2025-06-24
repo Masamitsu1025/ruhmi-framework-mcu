@@ -6,11 +6,13 @@
 (C) Copyright EdgeCortix, Inc. 2025 (C) Copyright Renesas Electronics Corporation 2025 Contributors Licensed under [each license](LICENSE.md).  
 
 ## Introduction
-RUHMI Framework povides a compiler and the necessary tools to convert machine learning models into C source code compatible with range of Renesas MCUs powered by Arm Ethos-U NPUs.
+RUHMI Framework[^1] povides a compiler and the necessary tools to convert machine learning models into C source code compatible with range of Renesas MCUs powered by Arm Ethos-U NPUs.
 The software stack generates C source code while ensuring compatibility and tight integration the with Renesas e2 studio.
 It also ships with Quantizer, a post-training static INT8 quantizer, allowing more demanding models to meet the memory and latency constraints typical of microcontrollers and Ethos-U accelerators.
 
-## RUHMI Framework workflow
+[^1]: RUHMI Framework is powered by EdgeCortix© MERA™.
+
+## RUHMI Framework[^1] workflow
 ![](doc/material/workflow_ruhmi.GIF)
 
 ## Supported embedded platforms  

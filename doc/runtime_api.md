@@ -34,10 +34,12 @@ The most important output that RHUMI framework generates is found under the dire
 ```
 
 ## Runtime API - CPU only deployment
-When a model is converted into source code with RUHMI compiler without Ethos-U support, all the operators in the model being deployed will be prepared to be run on CPU only.   
+When a model is converted into source code with RUHMI[^1] compiler without Ethos-U support, all the operators in the model being deployed will be prepared to be run on CPU only.   
 In this case, the generated code will refer to a single subgraph **compute_sub_0000<suffix>**, by default, when no suffix is provided, the name of the header that need to included on your application entry point is **compute_sub_0000.h**.  
 
 This header, **model.h** provides the declaration of a C function that if called it will run the model with the provided inputs and write the results on the provided output buffers:  
+
+[^1]: RUHMI Framework is powered by EdgeCortix© MERA™.
 
 ### Definition of input/output buffers (in the file of model.h)
 ```

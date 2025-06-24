@@ -2,15 +2,15 @@
 # Installation  
 
 In order to install the software tool, the installation file below shall be used.
-RUHMI framework includes MERA IPs supported by EdgeCortix, so you will see the files and some discriptions with the name of MERA included.
+RUHMI framework[^1] includes MERA IPs supported by EdgeCortix, so you will see the files and some discriptions with the name of MERA included.
 Also, the version number included in the file name like 2.3.2 depens on MERA IP.
 ```
 \install\mera-2.3.2+pkg.1595-cp310-cp310-manylinux_2_27_x86_64.whl  
 \install\mera-2.3.2-cp310-cp310-win_amd64.whl  
 ```
-**RUHMI Framework consists of MERA IP provided by EdgeCortix(TM). You will see the name of MERA sometimes in the process.**  
+**RUHMI Framework[^1] consists of MERA IP provided by EdgeCortix(TM). You will see the name of MERA sometimes in the process.**  
 
-**The resource for RUHMI Framework has located in the GitHub, [RUHMI-FRAMEWORK-MCU](https://github.com/renesas/ruhmi-framework-mcu)**  
+**The resource for RUHMI Framework[^1] has located in the GitHub, [RUHMI-FRAMEWORK-MCU](https://github.com/renesas/ruhmi-framework-mcu)**  
 
 ## Installation - Ubuntu Linux  
 In order to install RUHMI on supported environment, you will need:
@@ -131,3 +131,5 @@ successfully complete the following commands.
 (.venv) PS C:\work\install> python -c "import mera;print(dir(mera))"
 ['Deployer', 'InputDescription', 'InputDescriptionContainer', 'Layout', 'MERADeployer', 'MeraModel', 'MeraTvmDeployment', 'MeraTvmModelRunner', 'MeraTvmPrjDeployment', 'ModelLoader', 'ModelQuantizer', 'Platform', 'PowerMetrics', 'QuantizationQualityMetrics', 'Quantizer', 'TVMDeployer', 'Target', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'calculate_quantization_quality', 'deploy', 'deploy_project', 'get_mera_dna_version', 'get_mera_tvm_version', 'get_mera_version', 'get_versions', 'load_mera_deployment', 'mera_deployment', 'mera_model', 'mera_platform', 'mera_quantizer', 'metrics', 'model', 'quantization_quality', 'quantizer', 'version']  
 ```
+
+[^1]: RUHMI Framework is powered by EdgeCortix© MERA™.
