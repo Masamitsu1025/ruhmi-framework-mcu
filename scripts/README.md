@@ -15,7 +15,7 @@ This release introduces some tested models, if the models provided are for examp
   |     └── ad01_fp32.tflite  // sample model to input to Quantizer from MLCommons
 ```
 
-**If you see any warnings in the process below, you can refer [Tips](doc/tips.md)**
+**If you see any warnings in the process below, you can refer [Tips](../doc/tips.md)**
 
 ## Deploy to CPU only   
 By running the provided script **scripts/mcu_deploy.py**. we can compile the model for MCU only:  
