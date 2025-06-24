@@ -1,9 +1,9 @@
 ## If you see some warning at running the sample scripts, you can refer the tips below depending on the message in display.
-**[Linux]   For Linux version**
-**[Winows]  For Windows version**
+**[Linux]   For Linux version**  
+**[Winows]  For Windows version**  
 
 
-## **[Linux]** `GLIBCXX_3.4.32' not found` occered at running the script like "python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos"
+### **[Linux]** `GLIBCXX_3.4.32' not found` occered at running the script like "python mcu_deploy.py --ethos --ref_data ../models_int8 deploy_qtzed_ethos"
 
 Basically, just do the following commands: Firstly, install:
 ```
@@ -18,13 +18,14 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 ```
 
-## **[Linux]** .tflite,model_000_ad01_fp32,Error,Command '['cmake', '-DBUILD_PY_BINDINGS=ON', '..']' returned non-zero exit status 1.
+### **[Linux]** .tflite,model_000_ad01_fp32,Error,Command '['cmake', '-DBUILD_PY_BINDINGS=ON', '..']' returned non-zero exit status 1.
 
 This issue comes from the version of cmake.
 Please follow the next topic.
 
-## **[Linux]** CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+### **[Linux]** CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
   CMake 3.24 or higher is required.  You are running version 3.22.1
+  In order to install any higher version, you can refer to below steps.
 
 ```
 $ cmake --version  # Confirm the current version
