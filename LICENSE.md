@@ -2,13 +2,9 @@
 # License Summary
 
 ## RUHMI FRAMEWORK
-The files below should be subject to the condition.  
-[x] install\mera-2.3.2+pkg.1595-cp310-cp310-manylinux_2_27_x86_64.whl  
-[x] install\mera-2.3.2-cp310-cp310-win_amd64.whl  
-
-|Component|Copyright|License|
-|---|---|---|
-|RUHMI FRAMEWORK|EdgeCortix Inc., Renesas Electronics Corp.|Apache-2.0|
+|Component|License|
+|---|---|
+|RUHMI FRAMEWORK|Apache-2.0|
 
 
 ## External Licenses
@@ -21,6 +17,7 @@ You shall refer the license for each components listed below.
 
 |Component|License|
 |---|---|
+|MERA(TM) IP, (C) Copyright EdgeCortix, Inc. 2025|Apache, Version 2.0|
 |google/libnop|Apache, Version 2.0|
 |uxlfoundation/oneDNN|Apache, Version 2.0|
 |GNU OpenMP Linux only|GNU General Public License version 3 with GCC Runtime Library Exception, version 3.1|
