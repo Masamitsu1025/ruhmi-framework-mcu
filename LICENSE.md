@@ -4,7 +4,7 @@
 ## RUHMI FRAMEWORK
 |Component|License|
 |---|---|
-|RUHMI FRAMEWORK|Apache-2.0|
+|RUHMI FRAMEWORK|Apache, Version 2.0|
 
 
 ## External Licenses
