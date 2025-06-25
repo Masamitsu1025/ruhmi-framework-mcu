@@ -17,7 +17,7 @@ In the procedure to install it into your host machine, some software components 
 You shall refer the license for each components listed below.
 
 > **Notes**  
-> For the generated source code by RUHMI framework to import into your project for e2Studio, you shall refere the copyright and the license in the source code file.
+> **For the generated source code by RUHMI framework to import into your project for e2Studio, you shall refere the copyright and the license in the source code file.**
 
 |Component|License|
 |---|---|
