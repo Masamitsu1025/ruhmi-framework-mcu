@@ -17,7 +17,7 @@ You shall refer the license for each components listed below.
 
 |Component|License|
 |---|---|
-|MERA(TM) IP, (C) Copyright EdgeCortix, Inc. 2025|Apache, Version 2.0|
+|MERA™ IP, (C) Copyright EdgeCortix, Inc. 2025|Apache, Version 2.0|
 |google/libnop|Apache, Version 2.0|
 |uxlfoundation/oneDNN|Apache, Version 2.0|
 |GNU OpenMP Linux only|GNU General Public License version 3 with GCC Runtime Library Exception, version 3.1|
