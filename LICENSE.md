@@ -1,11 +1,23 @@
 
-# External Licenses to be complied:
+# License Summary
 
+## RUHMI FRAMEWORK
+The files below should be subject to the condition.  
+[x] install\mera-2.3.2+pkg.1595-cp310-cp310-manylinux_2_27_x86_64.whl  
+[x] install\mera-2.3.2-cp310-cp310-win_amd64.whl  
+
+|Component|Copyright|License|
+|---|---|---|
+|RUHMI FRAMEWORK|EdgeCortix Inc., Renesas Electronics Corp.|Apache-2.0|
+
+
+## External Licenses
 The repository provides the RUHMI Framework software.  
-In the procedure to install it into your host machine, some software components from the external place will be installed.
+In the procedure to install it into your host machine, some software components from the eternal place will be installed.
 You shall refer the license for each components listed below.
 
-For the generated source code by RUHMI framework to import into your project for e2Studio, you shall refere the copyright and the license in the source code file.
+> **Notes**  
+> For the generated source code by RUHMI framework to import into your project for e2Studio, you shall refere the copyright and the license in the source code file.
 
 |Component|License|
 |---|---|
