@@ -21,5 +21,5 @@
 3.	Connect the USB-C  cable to USB-C  (J10) of the EK-RA8P1 board.  
 4.	Connect the other end of this cable to the USB port of the host PC. When powered, the white LED near the center of the board (the “dash” in the EK-RA8P1 name) will light up.   
 
-[EK-RA8P1 Board to the Host PC via USB Debug Port](..\doc\material\EK_RA8P1_buringup.GIF)
+![](../doc/material/EK_RA8P1_buringup.GIF)
 
