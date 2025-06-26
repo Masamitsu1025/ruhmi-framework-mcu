@@ -28,7 +28,7 @@
 ### Lauch AI Navigator and Import sample AI Application.  
 
 <div align="center">
-<img src ="./lauch_Import.gif"> 
+<img src ="lauch_import.gif"> 
 
 <div align="left">
  
