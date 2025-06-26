@@ -22,7 +22,7 @@ Ensure you have completed the board setup steps for RA8P1 in its respective READ
 
 ### Software setup  
 Model download  
-![](../aseets/IC_install_demo.gif)  
+![](./aseets/IC_install_demo.gif)  
 
 ### How to compile and run from e2 studio  
 Compile the project
