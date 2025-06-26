@@ -9,9 +9,11 @@
 |1|TOP 5 accuracy|The Top-5 predicted class labels along with their confidence scores on the screen|
 |2|Inference time|Displays inference time in milliseconds|
 
-![](./assets/IM_flow.png)  
+<div align="center">
+<img src ="./assets/IM_flow.png" width="20%">  
 
 
+<div align="left">
 Power on the EK-RA8P1 Kit with any of the USB connectors that are available.  
 The Image Classification operation is demonstrated in renesas.com/EK-RA8P1  
 
@@ -20,17 +22,22 @@ The Image Classification operation is demonstrated in renesas.com/EK-RA8P1
 ### Hardware setup  
 Ensure you have completed the board setup steps for RA8P1 in its respective READMEs.  
 
-### Software setup  
-Model download  
-![](./assets/IC_install_demo.gif)  
+### Lauch AI Navigator and Import sample AI Application.  
 
-### How to compile and load artifact from e2 studio  
-Compile the project
-![](./assets/build_run.gif)  
+<div align="center">
+<img src ="./assets/IC_install_demo.gif"> 
+
+<div align="left">
+ 
+### Compile the sample application and load artifact to EK-RA8P1
+
+<div align="center">
+<img src ="./assets/build_run.gif" width="50%">  
+
 
 ### Demo
 
-![](./assets/Image_class_de,p.png)  
+<img src ="./assets/Image_class_demo.png" width="50%">  
 
 
 
