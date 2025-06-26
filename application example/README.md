@@ -28,14 +28,14 @@
 ### Lauch AI Navigator and Import sample AI Application.  
 
 <div align="center">
-<img src ="./assets/IC_install_demo.gif"> 
+<img src ="./lauch_Import.gif"> 
 
 <div align="left">
  
 ### Compile the sample application and load artifact to EK-RA8P1
 
 <div align="center">
-<img src ="./assets/build_run.gif">  
+<img src ="./build_run.gif">  
 <div align="left">
 
 
