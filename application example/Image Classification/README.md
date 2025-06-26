@@ -10,7 +10,7 @@
 |2|Inference time|Displays inference time in milliseconds|
 
 <div align="center">
-<img src ="./assets/IM_flow.png" width="20%">  
+<img src ="./assets/IM_flow.png" width="20%">  <img src ="./assets/Image_class_demo.png" width="50%">  
 
 
 <div align="left">
@@ -35,9 +35,7 @@ Ensure you have completed the board setup steps for RA8P1 in its respective READ
 <img src ="./assets/build_run.gif">  
 <div align="left">
 
-## Demo
 
-<img src ="./assets/Image_class_demo.png" width="50%">  
 
 
 
