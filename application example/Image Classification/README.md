@@ -1,7 +1,7 @@
 # Introduction
 
 
- Image Classification project uses a camera module and LCD display to display the items in the table below as AI Predictions:  
+This demo showcases an image classification application using MobileNet_v1 on the Renesas RA8P1 MCU with Arm Ethos-U55 support. It leverages the RUHMI Framework for efficient model deployment. Real-time inference is performed on camera input, and the top-5 classification results are displayed on an LCD, demonstrating low-power, high-performance edge AI capabilities. 
 
 
 | No   | Content            | Description      |
