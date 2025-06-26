@@ -90,7 +90,7 @@ Please download and install
 Install Python3.10 from the link.  
 [Python3.10](https://www.python.org/downloads/release/python-3105/)  
 
-Open PowerShell from the windows start menu.
+Open **PowerShell** from the windows start menu.
 Create and move to the working folder. Assuming C:\work is the current folder in the following process.   
 ```
 PS CD C:\work
