@@ -24,12 +24,13 @@ Ensure you have completed the board setup steps for RA8P1 in its respective READ
 Model download  
 ![](./assets/IC_install_demo.gif)  
 
-### How to compile and run from e2 studio  
+### How to compile and load artifact from e2 studio  
 Compile the project
 ![](./assets/build_run.gif)  
 
+### Demo
 
-
+![](./assets/Image_class_de,p.png)  
 
 
 
