@@ -1,7 +1,7 @@
 # Introduction
 
 
- Face Detection project uses a camera module and LCD display to display the items in the table and overlay bondking box at face:  
+The Face Detection project utilizes a camera module and an LCD display to show items from a table and overlay bounding boxes on detected faces.:  
 
 
 | No   | Content            | Description      |
