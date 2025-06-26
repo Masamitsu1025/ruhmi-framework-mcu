@@ -9,7 +9,7 @@
 |1|TOP 5 accuracy|The Top-5 predicted class labels along with their confidence scores on the screen|
 |2|Inference time|Displays inference time in milliseconds|
 
-![](/aseets/IM_flow.png)  
+![](./assets/IM_flow.png)  
 
 
 Power on the EK-RA8P1 Kit with any of the USB connectors that are available.  
@@ -22,11 +22,11 @@ Ensure you have completed the board setup steps for RA8P1 in its respective READ
 
 ### Software setup  
 Model download  
-![](./aseets/IC_install_demo.gif)  
+![](./assets/IC_install_demo.gif)  
 
 ### How to compile and run from e2 studio  
 Compile the project
-![](/aseets/build_run.gif)  
+![](./assets/build_run.gif)  
 
 
 
