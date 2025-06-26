@@ -8,7 +8,7 @@ The Face Detection project utilizes a camera module and an LCD display to show i
 | ---- | --------------- | --------- |
 |1|AI Model|Yolo-fastest|
 |2|Inference time|Displays inference time in milliseconds|
-|3|Num of face|counting number of faces|
+|3|Num of face|Count the number of faces|
 
 <div align="center">
 <img src ="face_det.png" width="40%">  <img src ="Face_Det_demo.png" width="50%">  
