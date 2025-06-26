@@ -8,10 +8,10 @@
 | ---- | --------------- | --------- |
 |1|AI Model|Yolo-fastest|
 |2|Inference time|Displays inference time in milliseconds|
-|3|Num of face|counting number faces|
+|3|Num of face|counting number of faces|
 
 <div align="center">
-<img src ="fd_flow.png" width="20%">  <img src ="Face_Det_demo.png" width="50%">  
+<img src ="face_det.png" width="40%">  <img src ="Face_Det_demo.png" width="50%">  
 
 
 <div align="left">
