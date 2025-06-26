@@ -1,7 +1,7 @@
 # Introduction
 
 
-The Face Detection project utilizes a camera module and an LCD display to show items from a table and overlay bounding boxes on detected faces.:  
+This demo project showcases face detection on a Renesas RA8 microcontroller using the RUHMI Framework. A camera captures images, and a lightweight neural network detects faces in real time. Results are displayed on an LCD with bounding boxes. The project demonstrates efficient AI inference and processing on embedded systems
 
 
 | No   | Content            | Description      |
