@@ -62,12 +62,15 @@ You might want to see the cutermised method to quantize and to optimise your mod
   [AI model compiler API](doc/mera_api.html)
 
 ## Support  
-### Error List  
-If error occurred at compile/runtime operation, please refer [error list](./doc/error_list.md).  
+### Tips  
+If you see any warnings in the process of installation and runing the sample scripts, you can refer [Tips](./doc/tips.md)  
 
 ### Limitation  
 There are some known constraints of the functions, Quatizer and C-Codegen.
 Please see [LIMITATIONS](LIMITATIONS.md).
+
+### Error List  
+If error occurred at compile/runtime operation, please refer [error list](./doc/error_list.md).  
 
 ### Enquiries  
 If you have any questions, please contact [Renesas Technical Support](https://www.renesas.com/support).  
