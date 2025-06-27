@@ -101,16 +101,17 @@ The sample script with using the Quantizer can be refered.
 
 To run the script:
 ```
-(.venv) PS C:\work> cd scripts/
-(.venv) PS C:\work> python mcu_quantize.py ../models_fp32 deploy_mcu
+(.venv) PS C:\work> cd scripts/  
+(.venv) PS C:\work> python mcu_quantize.py ../models_fp32 deploy_mcu   
+```
 
 ## Deploy to CPU with Ethos U55 supported   
 ```
-(.venv) PS C:\work> cd scripts/
-(.venv) PS C:\work> python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos
+(.venv) PS C:\work> cd scripts/  
+(.venv) PS C:\work> python mcu_quantize.py -e ../models_fp32_ethos deploy_ethos  
 ```
 
-## Check the quantize and deploy result
+## Check the quantize and deploy result   
 
 When Ethos-U support is enabled, each of the directories contain a deployment of the corresponding model for MCU + Ethos-U55 platform:  
 ```
