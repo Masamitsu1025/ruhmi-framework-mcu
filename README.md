@@ -29,15 +29,12 @@ In order to install RUHMI Framework on supported environment you will need:
   • A machine with Ubuntu 22.04 installation is recommended as this was the version used for testing  
   • A working installation of PyEnv or other Python virtual environment management system that provides Python version 3.10.x.  
 
-
 ## Installation - Windows
 The software stack is also provided as PIP package compatible with Windows 11.
 In order to install RUHMI Framework on supported environment you will need:  
 • A machine with Windows 10 or 11. Windows 11 is recommended as this was the version used for testing   
 • A working installation of PyEnv or other Python virtual environment management system that provides Python version 3.10.x.  
 • Microsoft C++ runtime libraries   
-
-  [Installation Guide](/install/README.md)
 
 ## Model compilation  
 Same cases are introduced with the sample script.

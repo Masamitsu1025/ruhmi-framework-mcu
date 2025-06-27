@@ -84,14 +84,12 @@ python -c "import mera;print(dir(mera))"
 ```
 
 # Installation - Windows  
+
 The software stack is also provided as PIP package compatible with Windows 11 or 10.  
 The only requirement needed on Windows are C++ runtime libraries.   
-Please download and install   
-[this package](https://aka.ms/vs/17/release/vc_redist.x64.exe)   
+Please download and install [this package](https://aka.ms/vs/17/release/vc_redist.x64.exe)   
 
-Install Python3.10 from the link.  
-[Python download page](https://www.python.org/)
-You can get Python3.10 from [Python3.10](https://www.python.org/downloads/release/python-3105/)  
+Install Python3.10 from [Python3.10](https://www.python.org/downloads/release/python-3105/)  
 
 Open **PowerShell** from the windows start menu.
 Create and move to the working folder. Assuming C:\work is the current folder in the following process.   
@@ -101,9 +99,9 @@ PS <current directory>> cd C:\work
 
 **Prepare the virtual environment**  
 Biuild the vertual environment for Python  
-``
+```
 PS C:\work> py -3.10 -m venv .venv  
-``
+```
 
 Activate the vurtual environment as following   
 Before activating the vertual environment, you may need to change the execution policy for shell execution.  
