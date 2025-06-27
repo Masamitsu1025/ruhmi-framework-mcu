@@ -6,7 +6,7 @@
 Copyright © 2025 EdgeCortix Inc. — Licensed to Renesas Electronics Corporation, with the right to sublicense under the Apache License 2.0.   
 Copyright © 2025 Renesas Electronics Corporation and its contributors. Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)   
 
-The framework shall use some external components to be installed in the installation process. Please refer the detail of [the license summery](LICENSE.md).  
+The framework shall use some external components to be installed in the installation process. Please refer the detail of [the license summary](LICENSE.md).  
 
 ## Introduction
 RUHMI Framework[^1] povides a compiler and the necessary tools to convert machine learning models into C source code compatible with range of Renesas MCUs powered by Arm Ethos-U NPUs.
@@ -16,7 +16,7 @@ It also ships with Quantizer, a post-training static INT8 quantizer, allowing mo
 [^1]: RUHMI Framework is powered by EdgeCortix® MERA™.
 
 ## RUHMI Framework[^1] workflow
-![](doc/material/workflow_ruhmi.GIF)
+![](docs/material/workflow_ruhmi.GIF)
 
 ## Supported embedded platforms  
   • Renesas MCU RA8P1 series   
