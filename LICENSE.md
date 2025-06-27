@@ -11,7 +11,7 @@
 The repository provides the RUHMI Framework software.  
 In the procedure to install it into your host machine, some software components from the external place will be downloaded and installed automatically. Please refer to refer to the license information for each components listed below.   
 
-> **Notes** 
+> **Notes**  
 > **For the generated source code by RUHMI framework to import into your projectfor e2Studio, please refer to the copyright and license notice contained in each source-code file.**  
 
 |Component|License|
