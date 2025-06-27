@@ -23,3 +23,19 @@
 
 ![](../doc/material/EK_RA8P1_buringup.GIF)
 
+## Downloading sample AI Application and run  
+
+### Lauch AI Navigator and Import sample AI Application.  
+
+<div align="center">
+<img src ="launch_import.gif"> 
+
+<div align="left">
+ 
+### Compile the sample application and load artifact to EK-RA8P1
+
+<div align="center">
+<img src ="./build_run.gif">  
+<div align="left">
+
+
