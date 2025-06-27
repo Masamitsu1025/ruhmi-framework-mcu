@@ -5,7 +5,7 @@ In order to install the software tool, the installation file below shall be used
 RUHMI framework[^1] includes MERA IPs supported by EdgeCortix, so you will see the files and some discriptions with the name of MERA included.
 Also, the version number included in the file name like 2.3.2 depens on MERA IP.  
 Download the installation files from [the repository](https://github.com/Masamitsu1025/ruhmi-framework-mcu/tree/main/install), then move on to the installation guide according to your system type;
-[Installation guide for Ubuntu Linux](#installation---Ubuntu-Linux), [Installation guide for Windows](#installation---Windows-11)
+[Installation guide for Ubuntu Linux](#installation---Ubuntu-Linux), [Installation guide for Windows](#installation---Windows)
 ```
 \install\mera-2.4.0+pkg.1702-cp310-cp310-manylinux_2_27_x86_64.whl  
 \install\mera-2.4.0+pkg.168-cp310-cp310-win_amd64.whl  
@@ -83,19 +83,20 @@ At this point MERA should be ready to use. You can confirm with the following ex
 python -c "import mera;print(dir(mera))"  
 ```
 
-# Installation - Windows 11  
+# Installation - Windows  
 The software stack is also provided as PIP package compatible with Windows 11 or 10.  
 The only requirement needed on Windows are C++ runtime libraries.   
 Please download and install   
 [this package](https://aka.ms/vs/17/release/vc_redist.x64.exe)   
 
 Install Python3.10 from the link.  
-[Python3.10](https://www.python.org/downloads/release/python-3105/)  
+[Python download page](https://www.python.org/)
+You can get Python3.10 from [Python3.10](https://www.python.org/downloads/release/python-3105/)  
 
 Open **PowerShell** from the windows start menu.
 Create and move to the working folder. Assuming C:\work is the current folder in the following process.   
 ```
-PS CD C:\work
+PS <current directory>> cd C:\work   
 ```
 
 **Prepare the virtual environment**  
@@ -111,7 +112,7 @@ PS C:\work> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 PS C:\work> .venv\Scripts\Activate.ps1  
 ```
 **Install MERA into Windows**  
-Copy the installation file under the install into the current folder.  
+Copy the install directory including the installation file into the current folder.  
 The file name may vary depending on the release version.
 
 Install RUHMI AI Compiler into the virtual environment.

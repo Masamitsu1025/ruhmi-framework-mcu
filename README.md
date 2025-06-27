@@ -9,7 +9,7 @@ Copyright © 2025 Renesas Electronics Corporation and its contributors. Licensed
 The framework shall use some external components to be installed in the installation process. Please refer the detail of [the license summary](LICENSE.md).  
 
 ## Introduction
-RUHMI Framework[^1] povides a compiler and the necessary tools to convert machine learning models into C source code compatible with range of Renesas MCUs powered by Arm Ethos-U NPUs.
+RUHMI Framework[^1] povide a compiler and the necessary tools to convert machine learning models into C source code compatible with range of Renesas MCUs powered by Arm Ethos-U NPUs.
 The software stack generates C source code while ensuring compatibility and tight integration the with Renesas e2 studio.
 It also ships with Quantizer, a post-training static INT8 quantizer, allowing more demanding models to meet the memory and latency constraints typical of microcontrollers and Ethos-U accelerators.
 
@@ -39,18 +39,18 @@ In order to install RUHMI Framework on supported environment you will need:
 
   [Installation Guide](/install/README.md)
 
-## Sample scripts
+## Model compilation  
 Same cases are introduced with the sample script.
 
 Example case:
 * Deploy models  
-  Deploy to CPU only   
-  Deploy to CPU with Ethos U55 supported    
+  - Deploy to CPU only   
+  - Deploy to CPU with Ethos U55 supported    
 * Quantize and deploy models  
-  Deploy to CPU only   
-  Deploy to CPU with Ethos U55 supported    
+  - Deploy to CPU only   
+  - Deploy to CPU with Ethos U55 supported    
 
-   [The detailed description of how to use the scripts](scripts/README.md)
+   [The detailed description of how to execute model compilation with the sample scripts](scripts/README.md)
 
 
 ## Guide to the generated C source code
@@ -61,12 +61,12 @@ You can refer to [how to use runtime API](docs/runtime_api.md)
 
 
 ## AI model compiler API Specification  
-You might want to see the cutermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
+You might want to see the custermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
   [AI model compiler API](https://masamitsu1025.github.io/ruhmi-framework-mcu/mera_api.html)
 
 ## Support  
 ### Tips  
-If you see any warnings in the process of installation and runing the sample scripts, you can refer [Tips](./docs/tips.md)  
+If you see any warnings in the process of installation and running the sample scripts, you can refer [Tips](./docs/tips.md)  
 
 ### Limitation  
 There are some known constraints of the functions, Quatizer and C-Codegen.
