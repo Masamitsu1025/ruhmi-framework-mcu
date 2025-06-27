@@ -5,13 +5,13 @@ In order to install the software tool, the installation file below shall be used
 RUHMI framework[^1] includes MERA IPs supported by EdgeCortix, so you will see the files and some discriptions with the name of MERA included.
 Also, the version number included in the file name like 2.3.2 depens on MERA IP.  
 Download the installation files from [the repository](https://github.com/Masamitsu1025/ruhmi-framework-mcu/tree/main/install), then move on to the installation guide according to your system type;
-[Installation guide for Ubuntu Linux](## Installation - Ubuntu Linux), [Installation guide for Windows](## Installation - Windows 11)
+[Installation guide for Ubuntu Linux](# Installation - Ubuntu Linux), [Installation guide for Windows](# Installation - Windows 11)
 ```
 \install\mera-2.4.0+pkg.1702-cp310-cp310-manylinux_2_27_x86_64.whl  
 \install\mera-2.4.0+pkg.168-cp310-cp310-win_amd64.whl  
 ```
 
-## Installation - Ubuntu Linux  
+# Installation - Ubuntu Linux  
 In order to install RUHMI on supported environment, you will need:
 * A machine with Ubuntu 22.04 installation is recommended as this was the version used for testing.
 * A working installation of PyEnv or other Python virtual environment management system that provides Python
@@ -83,7 +83,7 @@ At this point MERA should be ready to use. You can confirm with the following ex
 python -c "import mera;print(dir(mera))"  
 ```
 
-## Installation - Windows 11  
+# Installation - Windows 11  
 The software stack is also provided as PIP package compatible with Windows 11 or 10.  
 The only requirement needed on Windows are C++ runtime libraries.   
 Please download and install   
