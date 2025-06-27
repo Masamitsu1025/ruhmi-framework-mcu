@@ -54,7 +54,7 @@ Example case:
 After processing a model, you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes.
 The most important output is found under the directory **<deployment_directory>build/MCU/compilation/src**. 
 This directory contains the model converted into a set of C99 source code files.
-You can refer to [how to use runtime API](docs/runtime_api.md)
+You can refer to [Guide to the generated C source code](docs/runtime_api.md)
 
 
 ## AI model compiler API Specification  
