@@ -54,23 +54,23 @@ Example case:
 After processing a model, you will find several files on your deployment directory. This include some deploying artifacts generated during compilation that are worth to be kept around for debugging purposes.
 The most important output is found under the directory **<deployment_directory>build/MCU/compilation/src**. 
 This directory contains the model converted into a set of C99 source code files.
-You can refer to [how to use runtime API](doc/runtime_api.md)
+You can refer to [how to use runtime API](docs/runtime_api.md)
 
 
 ## AI model compiler API Specification  
 You might want to see the cutermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
-  [AI model compiler API](doc/mera_api.html)
+  [AI model compiler API](docs/mera_api.html)
 
 ## Support  
 ### Tips  
-If you see any warnings in the process of installation and runing the sample scripts, you can refer [Tips](./doc/tips.md)  
+If you see any warnings in the process of installation and runing the sample scripts, you can refer [Tips](./docs/tips.md)  
 
 ### Limitation  
 There are some known constraints of the functions, Quatizer and C-Codegen.
 Please see [LIMITATIONS](LIMITATIONS.md).
 
 ### Error List  
-If error occurred at compile/runtime operation, please refer [error list](./doc/error_list.md).  
+If error occurred at compile/runtime operation, please refer [error list](./docs/error_list.md).  
 
 ### Enquiries  
 If you have any questions, please contact [Renesas Technical Support](https://www.renesas.com/support).  
