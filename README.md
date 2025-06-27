@@ -60,7 +60,7 @@ You can refer to [how to use runtime API](docs/runtime_api.md)
 
 ## AI model compiler API Specification  
 You might want to see the cutermised method to quantize and to optimise your model with your good expertise. For your needs, you can refer to the API specification for the model compiler.
-  [AI model compiler API](docs/mera_api.html)
+  [AI model compiler API](https://masamitsu1025.github.io/ruhmi-framework-mcu/mera_api.html)
 
 ## Support  
 ### Tips  
