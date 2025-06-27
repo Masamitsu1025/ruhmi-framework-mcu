@@ -21,12 +21,14 @@ It also ships with Quantizer, a post-training static INT8 quantizer, allowing mo
 ## Supported embedded platforms  
   • Renesas MCU RA8P1 series   
 
+## Supported operating systems  
+RUHMI supports two operating systems. This section outlines the prerequisites. For detailed installation instructions, refer to [Installation Guide](/install/README.md).
+
 ## Installation - Ubuntu Linux
 In order to install RUHMI Framework on supported environment you will need:  
   • A machine with Ubuntu 22.04 installation is recommended as this was the version used for testing  
   • A working installation of PyEnv or other Python virtual environment management system that provides Python version 3.10.x.  
 
-[Installation Guide](/install/README.md)
 
 ## Installation - Windows
 The software stack is also provided as PIP package compatible with Windows 11.
