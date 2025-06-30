@@ -262,7 +262,7 @@ FSP Configuration
     CANFDCLK Div /10
     GPTCLK Src: PLL2P
     GPTCLK Div /2
-    GPT Src: GPTCLK
+    GPT Src: PCLKD
     LCDCLK Src: PLL2P
     LCDCLK Div /4
     I3CCLK Disabled
