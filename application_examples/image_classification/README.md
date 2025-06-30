@@ -62,7 +62,7 @@ No external dependencies are needed beyond what’s bundled in this repo and FSP
 ## Key Source Code
 
 Main AI inference logic is in:
-`<project_root/src/ai_application/image_classification/MainLoop_img.cc> (from line 101)
+`<project_root/src/ai_application/image_classification/MainLoop_img.cc> (from line 99)
 `
 
 ### Code Explanation:

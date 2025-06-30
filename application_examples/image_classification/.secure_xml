@@ -118,7 +118,7 @@
     <node id="board.clock.gptclk.source" option="board.clock.gptclk.source.pll2p"/>
     <node id="board.clock.gptclk.div" option="board.clock.gptclk.div.2"/>
     <node id="board.clock.gptclk.display" option="board.clock.gptclk.display.value"/>
-    <node id="board.clock.gtclk.source" option="board.clock.gtclk.source.gptclk"/>
+    <node id="board.clock.gtclk.source" option="board.clock.gtclk.source.pclkd"/>
     <node id="board.clock.gtclk.display" option="board.clock.gtclk.display.value"/>
     <node id="board.clock.lcdclk.source" option="board.clock.lcdclk.source.pll2p"/>
     <node id="board.clock.lcdclk.div" option="board.clock.lcdclk.div.4"/>

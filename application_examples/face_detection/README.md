@@ -55,7 +55,7 @@ The Image Classification operation is demonstrated in renesas.com/EK-RA8P1
 ## Key Source Code
 
 Main AI inference logic is in:
-`<project_root/src/ai_application/face_detection/MainLoop_obj.cc> (from line 107)
+`<project_root/src/ai_application/face_detection/MainLoop_obj.cc> (from line 105)
 `
 
 ## Code Explanation:
