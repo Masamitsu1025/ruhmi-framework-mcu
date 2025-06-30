@@ -3,7 +3,7 @@
 ## Preparing EK-RA8P1 and the system configuration  
 
 ### Hardware Requirements  
-•	EK-RA8P1 board  
+•	[EK-RA8P1 board](https://www.renesas.com/en/design-resources/boards-kits/ek-ra8p1?srsltid=AfmBOoqu5uHQpXJIfZmN9Pxmy2cGa02Nq_9w-2t3bX80hAutKFUQwCch)  
 •	OV5640 Camera module  
 •	Display  
 •	USB-C cable   
